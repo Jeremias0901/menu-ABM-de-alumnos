@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Servidor: localhost
--- Tiempo de generación: 09-09-2022 a las 13:02:50
--- Versión del servidor: 8.0.17
--- Versión de PHP: 7.3.10
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 10-09-2022 a las 05:45:49
+-- Versión del servidor: 10.4.24-MariaDB
+-- Versión de PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -33,7 +32,16 @@ CREATE TABLE `t_alumnos_del_curso` (
   `NombreDelUsuario` varchar(30) NOT NULL,
   `Mail` varchar(30) NOT NULL,
   `Codigo_Curso` int(2) NOT NULL
-) ENGINE=InnoDB;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `t_alumnos_del_curso`
+--
+
+INSERT INTO `t_alumnos_del_curso` (`ID`, `NombreDelUsuario`, `Mail`, `Codigo_Curso`) VALUES
+(61, 'gaby', 'gaby@gmail.com', 1),
+(65, 'jesus', 'jesus@gmail.com', 1),
+(67, 'pincky', 'pincky@gmail.com', 2);
 
 --
 -- Índices para tablas volcadas
@@ -53,7 +61,7 @@ ALTER TABLE `t_alumnos_del_curso`
 -- AUTO_INCREMENT de la tabla `t_alumnos_del_curso`
 --
 ALTER TABLE `t_alumnos_del_curso`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
