@@ -1,0 +1,9 @@
+body{
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+form{
+  grid-template-rows: repeat(2, auto);
+}
